@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var order = Order()
     var body: some View {
-        NavigationView {
+        NavigationView { 
             Form {
                 Section {
                     Picker("Select your cake type", selection: $order.type) {
@@ -44,7 +44,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationBarTitle("Cupcake Corner", displayMode: .inline)
+            .navigationBarTitle("Cupcake Corner")
         }
     }
 }
