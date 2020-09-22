@@ -12,6 +12,7 @@ struct DetailView: View {
     var user: User
     @State private var friendNavViewActive = false
     var body: some View {
+        ScrollView(.vertical) {
         VStack(alignment: .leading) {
             Section {
                 HStack(alignment: .center) {
@@ -40,34 +41,21 @@ struct DetailView: View {
             
             Section(header: Text("Friends").sectionHeader()) {
                 ForEach(user.friends, id: \.id) { friend in
-                    Button({ friendNavViewActive = true }, action: {
-                        NavigationLink(destination: DetailView(user:appData.users.first(where: { user in
-                            user.id == friend.id
-                        })
-                        ),
-                        label: {
-                            HStack {
-                                Image(systemName: "person.circle")
-                                Text(friend.name)
-                            }
-                        },
-                        IsActive: $friendNavViewActive)
-                        
-                    })
+                    NavigationLink(destination: DetailView(user: appData.users.first(where: { $0.id == friend.id })!)) {
+                        HStack {
+                            Image(systemName: "person.circle")
+                            Text(friend.name)
+                        }
+                        .foregroundColor(.primary)
+                    }
                     .buttonStyle(FriendLink())
                 }
             }
-            
             Spacer()
         }
         .padding(.horizontal, 15)
         .padding(.top, 18)
-        .navigationBarTitle(Text(""), displayMode: .inline)
+        .navigationBarTitle(Text(user.name), displayMode: .inline)
+        }
     }
 }
-
-//struct DetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailView(user: User.exampleUser)
-//    }
-//}
