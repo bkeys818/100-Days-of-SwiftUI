@@ -11,6 +11,7 @@
 		44B6B1E0251CDE4500742EA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B6B1DF251CDE4500742EA6 /* ContentView.swift */; };
 		44B6B1E2251CDE4A00742EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B6B1E1251CDE4A00742EA6 /* Assets.xcassets */; };
 		44B6B1E5251CDE4A00742EA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B6B1E4251CDE4A00742EA6 /* Preview Assets.xcassets */; };
+		44CB6841251D9FF400E6456E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB6840251D9FF400E6456E /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		44B6B1E1251CDE4A00742EA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44B6B1E4251CDE4A00742EA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44B6B1E6251CDE4A00742EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44CB6840251D9FF400E6456E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				44B6B1DD251CDE4500742EA6 /* InstaFilterApp.swift */,
 				44B6B1DF251CDE4500742EA6 /* ContentView.swift */,
+				44CB6840251D9FF400E6456E /* ImagePicker.swift */,
 				44B6B1E1251CDE4A00742EA6 /* Assets.xcassets */,
 				44B6B1E6251CDE4A00742EA6 /* Info.plist */,
 				44B6B1E3251CDE4A00742EA6 /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44CB6841251D9FF400E6456E /* ImagePicker.swift in Sources */,
 				44B6B1E0251CDE4500742EA6 /* ContentView.swift in Sources */,
 				44B6B1DE251CDE4500742EA6 /* InstaFilterApp.swift in Sources */,
 			);
